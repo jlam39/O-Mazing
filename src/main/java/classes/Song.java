@@ -109,6 +109,6 @@ public final class Song {
 					sound.pause();
 				}
 			}
-		});
+		}); 
 	}
 }
