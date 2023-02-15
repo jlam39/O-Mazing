@@ -10,8 +10,9 @@ import javax.swing.JFrame;
 public class Player extends JPanel implements KeyListener{
 	private int x;
 	private int y;
+	private Position p; //added position class, might want to use this
 	private int ballSize;
-	private Position p; //added position class
+	
 
 public Player(int x, int y, int ballSize) {
 	this.x = x;
