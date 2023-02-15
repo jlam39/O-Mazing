@@ -5,7 +5,7 @@ import acm.graphics.*;
 public class Buff_Debuff {
 	public Buff_Type type;
 	
-	public Buff_Type getFoodType() {
+	public Buff_Type getBuffType() {
 		if (type.toString() == "O1") {
 			return Buff_Type.O1;
 		}
