@@ -28,6 +28,28 @@ public void moveLeft() {
 }
 
 public void moveRight() {
-	x -= 5;
+	x += 5;
+}
+
+public void moveUp () {
+	y -= 5;
+}
+
+public void moveDown () {
+	y += 5;
+}
+
+public void keyPressed(KeyEvent e) {
+    int keyCode = e.getKeyCode();
+    if (keyCode == KeyEvent.VK_LEFT || keyCode == KeyEvent.VK_A) {
+        moveLeft();
+    } else if (keyCode == KeyEvent.VK_RIGHT || keyCode == KeyEvent.VK_D) {
+        moveRight();
+    } else if (keyCode == KeyEvent.VK_UP || keyCode == KeyEvent.VK_W) {
+        moveUp();
+    } else if (keyCode == KeyEvent.VK_DOWN || keyCode == KeyEvent.VK_S) {
+        moveDown();
+    }
+    
 }
 }
