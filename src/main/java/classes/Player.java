@@ -26,4 +26,8 @@ public void paintComponent(Graphics g) {
 public void moveLeft() {
 	x -= 5;
 }
+
+public void moveRight() {
+	x -= 5;
+}
 }
