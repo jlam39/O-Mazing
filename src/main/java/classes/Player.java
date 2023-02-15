@@ -16,4 +16,10 @@ public Player(int x, int y, int ballSize) {
 	this.setFocusable(true);
 	this.addKeyListener(this);
 }
+
+public void paintComponent(Graphics g) {
+	super.paintComponent(g);
+	g.setColor(Color.RED);
+	g.fillOval(x,  y, ballSize, ballSize);
+}
 }
