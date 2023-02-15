@@ -1,10 +1,13 @@
+package classes;
+
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import javax.swing.JPanel;
+import javax.swing.JFrame;
 
-public abstract class Player extends JPanel implements KeyListener{
+public class Player extends JPanel implements KeyListener{
 	private int x;
 	private int y;
 	private int ballSize;
@@ -38,7 +41,7 @@ public void moveUp () {
 public void moveDown () {
 	y += 5;
 }
-
+@Override
 public void keyPressed(KeyEvent e) {
     int keyCode = e.getKeyCode();
     if (keyCode == KeyEvent.VK_LEFT || keyCode == KeyEvent.VK_A) {
@@ -51,5 +54,17 @@ public void keyPressed(KeyEvent e) {
         moveDown();
     }
     
+}
+
+@Override
+public void keyTyped(KeyEvent e) {
+	// TODO Auto-generated method stub
+	
+}
+
+@Override
+public void keyReleased(KeyEvent e) {
+	// TODO Auto-generated method stub
+	
 }
 }
