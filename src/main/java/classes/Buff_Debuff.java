@@ -17,6 +17,8 @@ public class Buff_Debuff {
 		}
 		return Buff_Type.None;
 	}
+	
+	//randomize buff type or have set list of buff type 
 
 
 
