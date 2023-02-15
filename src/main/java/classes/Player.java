@@ -22,4 +22,8 @@ public void paintComponent(Graphics g) {
 	g.setColor(Color.RED);
 	g.fillOval(x,  y, ballSize, ballSize);
 }
+
+public void moveLeft() {
+	x -= 5;
+}
 }
