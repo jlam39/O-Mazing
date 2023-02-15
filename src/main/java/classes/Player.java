@@ -4,4 +4,16 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import javax.swing.JPanel;
 
-public class Player
+public abstract class Player extends JPanel implements KeyListener{
+	private int x;
+	private int y;
+	private int ballSize;
+
+public Player(int x, int y, int ballSize) {
+	this.x = x;
+	this.y = y;
+	this.ballSize = ballSize;
+	this.setFocusable(true);
+	this.addKeyListener(this);
+}
+}
