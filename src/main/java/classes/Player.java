@@ -14,6 +14,10 @@ public class Player extends JPanel implements KeyListener{
 	private int speed; // added speed to Player class so it is easy to change
 	private int ballSize;
 	
+	// to see of where the player is has a buff or debuff
+	// might want an array of Locations?
+	public Location Player_location; // The Location of the Player 
+	
 
 public Player(int x, int y, int s, int ballSize) {
 	this.x = x;
