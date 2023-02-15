@@ -21,12 +21,14 @@ public class Map extends GraphicsApplication implements ActionListener, KeyListe
 	
 	
 	// Default, each coordinate will have a terrain value of Barrier
-	
+	private ArrayList <Location> map;
 	
 	// Go through an array of location of path
 	// if coordinate in path array, then make terrain a path
 	
 	// Go through debuff array, if location matches put a buff or debuff
+	
+	
 	
 	
 	
