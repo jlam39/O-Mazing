@@ -28,6 +28,10 @@ public void moveLeft() {
 }
 
 public void moveRight() {
-	x -= 5;
+	x += 5;
+}
+
+public void moveUp () {
+	y -= 5;
 }
 }
