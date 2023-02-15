@@ -14,7 +14,7 @@ public class Terrain {
 		}
 		return Terrain_Type.wall;
 	}
-
+ 
 
 
 }
