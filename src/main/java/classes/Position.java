@@ -7,16 +7,23 @@ public class Position {
 	private int y;
 	
 	Position(int X, int Y){
-		x = X;
-		y = Y;
+		this.x = X;
+		this.y = Y;
 		
 	}
+	void setX(int X) {
+		this.x = X;
+	}
+	void setY(int Y) {
+		this.y = Y;
+	}
 	
-	int get_X() {
+	
+	int getX() {
 		return x;
 	}
 	
-	int get_Y() {
+	int getY() {
 		return y;
 	}
 	

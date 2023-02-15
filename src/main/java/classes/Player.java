@@ -11,10 +11,12 @@ public class Player extends JPanel implements KeyListener{
 	private int x;
 	private int y;
 	private int ballSize;
+	private Position p; //added position class
 
 public Player(int x, int y, int ballSize) {
 	this.x = x;
 	this.y = y;
+	this.p = new Position(x, y); // initialized position
 	this.ballSize = ballSize;
 	this.setFocusable(true);
 	this.addKeyListener(this);
@@ -28,19 +30,25 @@ public void paintComponent(Graphics g) {
 
 public void moveLeft() {
 	x -= 5;
+	this.p = new Position(x, y);
+	
 }
 
 public void moveRight() {
 	x += 5;
+	this.p = new Position(x, y);
 }
 
 public void moveUp () {
 	y -= 5;
+	this.p = new Position(x, y);
 }
 
 public void moveDown () {
 	y += 5;
+	this.p = new Position(x, y);
 }
+
 @Override
 public void keyPressed(KeyEvent e) {
     int keyCode = e.getKeyCode();
@@ -53,6 +61,8 @@ public void keyPressed(KeyEvent e) {
     } else if (keyCode == KeyEvent.VK_DOWN || keyCode == KeyEvent.VK_S) {
         moveDown();
     }
+    this.setLocation(x,y); // Changes location of Player
+    
     
 }
 
