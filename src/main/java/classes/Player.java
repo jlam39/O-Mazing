@@ -34,4 +34,9 @@ public void moveRight() {
 public void moveUp () {
 	y -= 5;
 }
+
+public void moveDown () {
+	y += 5;
+}
+
 }
