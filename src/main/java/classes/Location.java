@@ -9,9 +9,9 @@ public class Location {
 	
 	// initialize
 	Location(Terrain terr, Position pos, Buff_Debuff buff){
-		t = terr;
-		p = pos;
-		b = buff;
+		this.t = terr;
+		this.p = pos;
+		this.b = buff;
 		
 	}
 	

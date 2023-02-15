@@ -4,7 +4,6 @@ import acm.graphics.*;
 
 public class Terrain {
 	public Terrain_Type type;
-	
 	public Terrain_Type getTerrainType() {
 		if (type.toString() == "path") {
 			return Terrain_Type.path;
