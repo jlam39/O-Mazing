@@ -1,20 +1,19 @@
 package classes;
 
-public enum FoodType {
+public enum Buff_Type {
 
-	BUN, TOMATO, KETCHUP, TOFU;
+	O1, logN, N2;
 
 	public String toString() {
 		switch (this) {
-		case BUN:
-			return "bun";
-		case TOMATO:
-			return "tomato";
-		case KETCHUP:
-			return "ketchup";
-		case TOFU:
-			return "tofu";
+		case O1:
+			return "O1";
+		case logN:
+			return "logN";
+		case N2:
+			return "N2";
 		}
+			
 		return "n/a";
 	}
 
