@@ -4,9 +4,7 @@ import acm.graphics.*;
 
 public class Buff_Debuff {
 	public Buff_Type type;
-
-	// public boolean rightSpawn; //
-
+	
 	public Buff_Type getFoodType() {
 		if (type.toString() == "O1") {
 			return Buff_Type.O1;
