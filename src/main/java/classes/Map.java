@@ -16,12 +16,20 @@ public class Map extends GraphicsApplication implements ActionListener, KeyListe
 	// Map will be a grid with grid blocks
 	
 	// Size of the Map
+	private int column;
+	private int row;
+	private Location[][] size;
 	
+	Map(int c, int r){
+		this.column = c;
+		this.row = r;
+		this.size = new Location[r][c];
+	}
 
 	
 	
 	// Default, each coordinate will have a terrain value of Barrier
-	private ArrayList <Location> map;
+	
 	
 	// Go through an array of location of path
 	// if coordinate in path array, then make terrain a path
