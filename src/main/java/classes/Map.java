@@ -35,8 +35,13 @@ public class Map extends GraphicsApplication implements ActionListener, KeyListe
 		
 		for (int j = 0; j < row; j ++) {
 			for (int k = 0; k < column; k++) {
-				size[j][k] = new Location(new Terrain(), new Position(j * 10,k * 10), new Buff_Debuff());
-				
+				size[j][k] = new Location(new Terrain(Terrain_Type.wall), new Position(j * 10,k * 10), new Buff_Debuff());
+				for (int i = 0; i < p.size(); i++) {
+					if (p.get(i).getX() == j && p.get(i).getY() == k) {
+						size[j][k].set_Terrain(new Terrain(Terrain_Type.path));
+						
+					}
+				}
 			}
 		}
 	}

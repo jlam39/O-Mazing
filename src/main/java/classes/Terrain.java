@@ -4,6 +4,9 @@ import acm.graphics.*;
 
 public class Terrain {
 	public Terrain_Type type;
+	public Terrain(Terrain_Type t) {
+		this.type = t;
+	}
 	public void set_type(Terrain_Type t) {
 		this.type = t;
 		
