@@ -4,6 +4,10 @@ import acm.graphics.*;
 
 public class Terrain {
 	public Terrain_Type type;
+	public void set_type(Terrain_Type t) {
+		this.type = t;
+		
+	}
 	public Terrain_Type getTerrainType() {
 		if (type.toString() == "path") {
 			return Terrain_Type.path;
@@ -13,6 +17,7 @@ public class Terrain {
 		}
 		return Terrain_Type.wall;
 	}
+	
  
 
 

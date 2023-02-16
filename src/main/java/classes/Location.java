@@ -35,7 +35,7 @@ public class Location extends JPanel {
 			g.setColor(Color.WHITE);
 		}
 		
-		g.fillRect(this.p.getX() - width/2, this.p.getY() + height/2, width, height);
+		g.fillRect(this.p.getX() - width/2, this.p.getY() + height/2, this.width, this.height);
 	}
 	
 	//setters

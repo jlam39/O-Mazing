@@ -19,16 +19,33 @@ public class Map extends GraphicsApplication implements ActionListener, KeyListe
 	private int column;
 	private int row;
 	private Location[][] size;
+	private int block_width = 10;
+	private int block_height = 10;
+	private ArrayList<Position> p = new ArrayList<Position>();
 	
 	Map(int c, int r){
 		this.column = c;
 		this.row = r;
 		this.size = new Location[r][c];
+		
+		for (int i = 0; i < 10; i++) {
+			p.add(new Position(30, i * 10));
+			p.add(new Position(40, i * 10));
+		}
+		
+		for (int j = 0; j < row; j ++) {
+			for (int k = 0; k < column; k++) {
+				size[j][k] = new Location(new Terrain(), new Position(j * 10,k * 10), new Buff_Debuff());
+				
+			}
+		}
 	}
 
 	
 	
 	// Default, each coordinate will have a terrain value of Barrier
+	
+
 	
 	
 	// Go through an array of location of path
