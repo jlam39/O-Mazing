@@ -59,10 +59,11 @@ public void moveDown () {
 	this.p = new Position(x, y);
 }
 
-public boolean checkCollision(Buff on) {
+/*public boolean checkCollision(Buff on) {
 	Rectangle playerBounds = new Rectangle(x,y,size, size);
 	return playerBounds.intersects(buff.getBounds());
 }
+*/
 @Override
 public void keyPressed(KeyEvent e) {
     int keyCode = e.getKeyCode();
