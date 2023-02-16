@@ -15,6 +15,7 @@ import edu.pacific.comp55.starter.GraphicsApplication;
 import edu.pacific.comp55.starter.MainApplication;
 
 public class Map extends GraphicsApplication implements ActionListener, KeyListener {
+	private static final Graphics Graphics = null;
 	// Map will be a grid with grid blocks
 	
 	
@@ -82,15 +83,24 @@ public class Map extends GraphicsApplication implements ActionListener, KeyListe
 	}
 	
 	public static void main(String args[]) {
-		Map m = new Map(10,10);
+		Map m = new Map(500,500);
+	      JFrame frame = new JFrame();
+	        frame.setSize(500, 500);
+	        
 		for (int i = 0; i < 10; i++) {
 			for (int j = 0; j < 10; j ++) {
 				System.out.print(m.get_size()[i][j]);
+		        frame.add(m.get_size()[i][j]);
+		        
+
 			}
 		}
+		frame.setVisible(true);
+        
 		
 		
 	}
+	
 
 
 }

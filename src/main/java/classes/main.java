@@ -8,7 +8,6 @@ public class main {
         JFrame frame = new JFrame();
         
         frame.setSize(500, 500);
-        frame.pack();
         frame.add(player);
         frame.setVisible(true);
         
