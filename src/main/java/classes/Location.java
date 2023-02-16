@@ -14,6 +14,18 @@ public class Location {
 		this.b = buff;
 		
 	}
+	//setters
+	void set_Terrain(Terrain terr) {
+		this.t = terr;
+	}
+	void set_Position(Position pos) {
+		this.p = pos;
+	}
+	void set_buff(Buff_Debuff buff) {
+		this.b = buff;
+		
+	}
+	
 	
 	// getters
 	
