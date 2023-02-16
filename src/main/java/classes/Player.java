@@ -72,7 +72,7 @@ public void keyPressed(KeyEvent e) {
     }
     this.setLocation(x,y); // Changes location of Player
     
-    
+    // i love men
 }
 
 @Override
