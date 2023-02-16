@@ -1,20 +1,41 @@
 package classes;
 
+import java.awt.Color;
+import java.awt.Graphics;
+
+import javax.swing.JPanel;
+
 import acm.graphics.*;
 
-public class Location {
+public class Location extends JPanel {
 	private Terrain t;
 	private Position p; 
 	private Buff_Debuff b;
 	private int width = 10;
 	private int height = 10;
 	GRect block;
+	
+
+	
 	// initialize
 	Location(Terrain terr, Position pos, Buff_Debuff buff){
 		this.t = terr;
 		this.p = pos;
 		this.b = buff;
-		block = new GRect(this.p.getX() - width/2, this.p.getY() + height/2, width, height);
+		
+	}
+	
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		
+		if (t.getTerrainType() == Terrain_Type.wall) {
+			g.setColor(Color.RED);
+		}
+		else {
+			g.setColor(Color.WHITE);
+		}
+		
+		g.fillRect(this.p.getX() - width/2, this.p.getY() + height/2, width, height);
 	}
 	
 	//setters
