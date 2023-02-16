@@ -15,6 +15,7 @@ public class Player extends JPanel implements KeyListener{
 	private int ballSize;
 	
 	// to see of where the player is has a buff or debuff
+	
 	// might want an array of Locations?
 	public Location Player_location; // The Location of the Player 
 	
@@ -58,6 +59,10 @@ public void moveDown () {
 	this.p = new Position(x, y);
 }
 
+public boolean checkCollision(Buff on) {
+	Rectangle playerBounds = new Rectangle(x,y,size, size);
+	return playerBounds.intersects(buff.getBounds());
+}
 @Override
 public void keyPressed(KeyEvent e) {
     int keyCode = e.getKeyCode();
