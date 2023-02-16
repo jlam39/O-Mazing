@@ -14,6 +14,7 @@ public class Location {
 		this.b = buff;
 		
 	}
+	
 	//setters
 	void set_Terrain(Terrain terr) {
 		this.t = terr;

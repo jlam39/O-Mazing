@@ -22,7 +22,7 @@ public final class Song {
 		players = new HashMap<String, MediaPlayer>();
 	}
 
-	//audio player constructer
+	//audio player constructor
 	public static Song getInstance() {
 		return AudioPlayerInit.INSTANCE;
 	}
