@@ -1,11 +1,13 @@
 package classes;
 
+import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyListener;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import javax.swing.JFrame;
 import javax.swing.Timer;
 
 import acm.program.GraphicsProgram;
@@ -14,6 +16,7 @@ import edu.pacific.comp55.starter.MainApplication;
 
 public class Map extends GraphicsApplication implements ActionListener, KeyListener {
 	// Map will be a grid with grid blocks
+	
 	
 	// Size of the Map
 	private int column;
@@ -42,7 +45,9 @@ public class Map extends GraphicsApplication implements ActionListener, KeyListe
 						
 					}
 				}
+				
 			}
+			
 		}
 	}
 
@@ -58,6 +63,10 @@ public class Map extends GraphicsApplication implements ActionListener, KeyListe
 	
 	// Go through debuff array, if location matches put a buff or debuff
 	
+	//getters
+	private Location[][] get_size(){
+		return this.size;
+	}
 	
 	
 	
@@ -65,11 +74,21 @@ public class Map extends GraphicsApplication implements ActionListener, KeyListe
 
 	@Override
 	public void run() {
+		Map m = new Map(10,10);
 		
+		
+
 		
 	}
 	
 	public static void main(String args[]) {
+		Map m = new Map(10,10);
+		for (int i = 0; i < 10; i++) {
+			for (int j = 0; j < 10; j ++) {
+				System.out.print(m.get_size()[i][j]);
+			}
+		}
+		
 		
 	}
 
